@@ -1,0 +1,19 @@
+<div style="padding:10px;">
+    <button type="back" class="btn btn-default" routerLink="/Home" routerLinkActive="active" >Back</button>
+    <br>
+    <br>
+<div class="form-group">
+    <span style="font-size: 20px;">Name: </span><br/>
+    <input type="text" class="form-control" id="usr" style="width:300px;" [(ngModel)]="t.name" ><br/>
+    <span style="font-size: 20px;">Phone: </span><br/>
+    <input type="tel" class="form-control" id="usr" [(ngModel)]="t.phone" maxlength="10"  style="width:300px;" >
+  </div>
+ <br>
+  <h2>Subscriber to be added: </h2><br>
+  Name:{{t.name}}<br/>
+  Phone:{{t.phone}}<br/>
+<br>
+<br>
+  <button type="Add" class="btn btn-success" (click)="addtask()" routerLink="/Home" routerLinkActive="active">Add New</button>
+<br>
+</div>
